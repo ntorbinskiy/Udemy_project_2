@@ -1,19 +1,20 @@
 $main-color: #1eacc7
 $second-color: #ff5656
-
 =btn_hover
 	&:hover
+		border: none
 		background-image: none
-		background-color: #FF7F50
+		background-color: $second-color
+		transition: 1s all
+
+		
 
 *
 	font-family: 'Roboto', sans-serif
 
-
 header
 	position: relative
 	height: 50px
-
 
 nav
 	position: fixed
@@ -22,6 +23,7 @@ nav
 	background-color: #212121
 	z-index: 2
 
+
 .menu
 	display: flex
 	justify-content: space-between
@@ -29,14 +31,14 @@ nav
 	margin: 0
 	list-style-type: none
 
-	&_link
-		color: #ffffff
-		font-size: 15px
-		font-weight: 300
+.menu_link
+	color: #ffffff
+	font-size: 15px
+	font-weight: 300
 
-	&_item
-		border-right: 2px dotted black
-		padding-right: 28px
+.menu_item
+	border-right: 2px dotted black
+	padding-right: 28px
 
 .subheader
 	position: absolute
@@ -45,100 +47,100 @@ nav
 	height: 84px
 	background-color: rgba(0, 0, 0, 0.6)
 
-	&_logo
-		display: block
-		max-width: 100%
-		margin-top: 16px
+.subheader_logo
+	display: block
+	max-width: 100%
+	margin-top: 16px
 
-	&_official
-		margin-top: 6px
-		opacity: 0.5
-		color: #ffffff
-		font-size: 13px
-		font-weight: 400
+.subheader_official
+	margin-top: 6px
+	opacity: 0.5
+	color: #ffffff
+	font-size: 13px
+	font-weight: 400
 
-	&_call
-		color: #ffffff
-		font-size: 12px
-		font-weight: 300
-		margin-top: 19px
-		text-align: right
+.subheader_call
+	color: #ffffff
+	font-size: 12px
+	font-weight: 300
+	margin-top: 19px
+	text-align: right
 
-	&_phone
-		display: block
-		margin-top: 8px
-		color: #ffffff
-		font-size: 22px
-		font-weight: 400
-		text-transform: uppercase
-		text-align: right
-		line-height: 12px
+.subheader_phone
+	display: block
+	margin-top: 8px
+	color: #ffffff
+	font-size: 22px
+	font-weight: 400
+	text-transform: uppercase
+	text-align: right
+	line-height: 12px
 
-	&_btn
-		margin-top: 19px
-		width: 172px
-		height: 46px
-		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
-		border: none
-		border-radius: 4px
-		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
-		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
-		color: #ffffff
-		font-size: 14px
-		font-weight: 400
-		text-transform: uppercase
-		transition: 0,5s
-		+btn_hover
-		
+.subheader_btn
+	margin-top: 19px
+	width: 172px
+	height: 46px
+	box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+	border: none
+	border-radius: 4px
+	background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+	color: #ffffff
+	font-size: 14px
+	font-weight: 400
+	text-transform: uppercase
+	transition: 0,5s all
+	+btn_hover
 
 .promo
-	min-height: 800px
-	background: url('/src/img/bg/first_bg.png') center (center / cover) no-repeat
-	padding: 150px 0 135px 0
+  min-height: 800px
+  background: url('/src/img/bg/first_bg.png') center (center / cover) no-repeat
+  padding: 150px 0 135px 0
 
-	&_header
-		color: #ffffff
-		font-weight: 700
-		text-transform: uppercase
-		font-size: 60px
-		line-height: 60px
-		margin: 0
-		text-align: center
+.promo_header
+	color: #ffffff
+	font-weight: 700
+	text-transform: uppercase
+	font-size: 60px
+	line-height: 60px
+	margin: 0
+	text-align: center
 
-	&_subheader
-		color: #ffffff
-		font-weight: 700
-		text-transform: uppercase
-		font-size: 36px
-		line-height: 36px
-		margin: 0
-		margin-top: 22px
-		text-align: center
+.promo_subheader
+	color: #ffffff
+	font-weight: 700
+	text-transform: uppercase
+	font-size: 36px
+	line-height: 36px
+	margin: 0
+	margin-top: 22px
+	text-align: center
 
-	&_descr
-		color: #ffffff
-		font-size: 18px
-		font-weight: 400
-		line-height: 24px
-		text-align: center
-		margin-top: 23px
+.promo_descr
+	color: #ffffff
+	font-size: 18px
+	font-weight: 400
+	line-height: 24px
+	text-align: center
+	margin-top: 23px
 
-	&_btn
-		display: block
-		margin: 118px auto 0 auto
-		width: 259px
-		height: 63px
-		box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
-		border: none
-		border-radius: 4px
-		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
-		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
-		color: #ffffff
-		font-size: 18px
-		font-weight: 400
-		text-transform: uppercase
-		transition: 0,5s
-		+btn_hover
+.promo_btn
+	display: block
+	margin: 118px auto 0 auto
+	width: 259px
+	height: 63px
+	box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+	border: none
+	border-radius: 4px
+	background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+	color: #ffffff
+	font-size: 18px
+	font-weight: 400
+	text-transform: uppercase
+	transition: 0,5s all
+	+btn_hover
+
 .reasons
   padding: 71px 0 65px 0
 
@@ -193,26 +195,26 @@ nav
 	align-items: center
 	margin-top: 35px
 
-	&_round
-		display: flex
-		justify-content: center
-		align-items: center
-		margin-right: 26px
-		width: 113px
-		height: 113px
-		background-color: #1eacc7
-		border-radius: 100%
+.reasons_round
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-right: 26px
+	width: 113px
+	height: 113px
+	background-color: #1eacc7
+	border-radius: 100%
 
-	&_descr
-		width: 343px
+.reasons_descr
+	width: 343px
 
-	&_subtitle
+	.reasons_subtitle
 		line-height: 21px
 		color: #1eacc7
 		font-size: 17px
 		font-weight: 400
 
-	&_text
+	.reasons_text
 		color: #202020
 		font-size: 15px
 		font-weight: 300
@@ -264,21 +266,32 @@ nav
 			border-radius: 100%
 			padding: 6px
 			cursor: pointer
+			
 			&::before
-				content: ""
+				content: ''
 				display: block
 				width: 14px
 				height: 2px
 				background-color: $main-color
+				transition: 1s all
 			&::after
-				content: ""
+				content: ''
+				position: absolute
+				left: 50%
 				display: block
 				height: 14px
-				width: 2px	
+				width: 2px
 				background-color: $main-color
+				transform: translateX(-50%)
+				transition: 1s all
+			&:hover
+				&::before, &::after
+					background-color: $second-color
+					
+					
 
 .car
-	position: relative 
+	position: relative
 	min-height: 895px
 	padding: 57px 0 138px 0
 	&_img
@@ -300,3 +313,54 @@ nav
 		height: 499px
 		width: 100%
 		background-color: #070716
+
+
+.require
+	padding: 68px 0 84px 0
+	&_block
+		margin: 33px 0 33px 0
+		&_nmb
+			margin-bottom: 0px
+	&_title
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+		&_red
+			color: $second-color	
+	&_descr
+			color: #1ca8c3
+			font-weight: 300		
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			color: #222222
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px	
+			margin-bottom: 10px
+			&::before
+				content: ""
+				display: inline-block
+				vertical-align: middle
+				transform: translate(-5px, -2px)
+				width: 21px
+				height: 20px
+				background-image: url('/src/icons/correct.png')
+		&_red	
+			li
+				color: #222222
+				font-size: 17px
+				font-weight: 300
+				line-height: 24px	
+				margin-bottom: 10px
+				&::before
+					content: ""
+					display: inline-block
+					vertical-align: middle
+					transform: translate(-5px, -2px)
+					width: 21px
+					height: 20px
+					background-image: url('/src/icons/False.png')		
+			

@@ -94,13 +94,16 @@ nav {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  -webkit-transition: 0,5s;
-  transition: 0,5s;
+  -webkit-transition: 0,5s all;
+  transition: 0,5s all;
 }
 
 .subheader_btn:hover {
+  border: none;
   background-image: none;
-  background-color: #FF7F50;
+  background-color: #ff5656;
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 
 .promo {
@@ -155,13 +158,16 @@ nav {
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  -webkit-transition: 0,5s;
-  transition: 0,5s;
+  -webkit-transition: 0,5s all;
+  transition: 0,5s all;
 }
 
 .promo_btn:hover {
+  border: none;
   background-image: none;
-  background-color: #FF7F50;
+  background-color: #ff5656;
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 
 .reasons {
@@ -232,7 +238,7 @@ nav {
   margin-top: 35px;
 }
 
-.reasons .reasons_block_round {
+.reasons_round {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,18 +255,18 @@ nav {
   border-radius: 100%;
 }
 
-.reasons .reasons_block_descr {
+.reasons_descr {
   width: 343px;
 }
 
-.reasons .reasons_block_subtitle {
+.reasons_descr .reasons_subtitle {
   line-height: 21px;
   color: #1eacc7;
   font-size: 17px;
   font-weight: 400;
 }
 
-.reasons .reasons_block_text {
+.reasons_descr .reasons_text {
   color: #202020;
   font-size: 15px;
   font-weight: 300;
@@ -343,19 +349,31 @@ nav {
 }
 
 .mobile_item_plus::before {
-  content: "";
+  content: '';
   display: block;
   width: 14px;
   height: 2px;
   background-color: #1eacc7;
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 
 .mobile_item_plus::after {
-  content: "";
+  content: '';
+  position: absolute;
+  left: 50%;
   display: block;
   height: 14px;
   width: 2px;
   background-color: #1eacc7;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.mobile_item_plus:hover::before, .mobile_item_plus:hover::after {
+  background-color: #ff5656;
 }
 
 .car {
@@ -387,5 +405,76 @@ nav {
   height: 499px;
   width: 100%;
   background-color: #070716;
+}
+
+.require {
+  padding: 68px 0 84px 0;
+}
+
+.require_block {
+  margin: 33px 0 33px 0;
+}
+
+.require_block_nmb {
+  margin-bottom: 0px;
+}
+
+.require_title {
+  color: #1ca8c3;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.require_title_red {
+  color: #ff5656;
+}
+
+.require_descr {
+  color: #1ca8c3;
+  font-weight: 300;
+}
+
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+.require_list li {
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.require_list li::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translate(-5px, -2px);
+          transform: translate(-5px, -2px);
+  width: 21px;
+  height: 20px;
+  background-image: url("/src/icons/correct.png");
+}
+
+.require_list_red li {
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.require_list_red li::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translate(-5px, -2px);
+          transform: translate(-5px, -2px);
+  width: 21px;
+  height: 20px;
+  background-image: url("/src/icons/False.png");
 }
 /*# sourceMappingURL=style.css.map */

@@ -501,7 +501,6 @@ nav {
 }
 
 .finish {
-  background-color: black;
   min-height: 156px;
   padding: 14px 0 39px 0;
 }
@@ -557,30 +556,5 @@ nav {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-}
-
-.finish_ {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 32px;
-  width: 153px;
-}
-
-.finish__cyrcle {
-  width: 32px;
-  height: 32px;
-  background-color: #070716;
-  border-radius: 100%;
-}
-
-.finish__cyrcle_icon {
-  display: block;
-  width: 9px;
-  height: 18px;
-  background-color: #ff5656;
 }
 /*# sourceMappingURL=style.css.map */

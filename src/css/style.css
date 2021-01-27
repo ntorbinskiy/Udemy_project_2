@@ -2,6 +2,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   position: relative;
   height: 50px;
@@ -186,6 +190,7 @@ nav {
   font-weight: 300;
   text-transform: uppercase;
   z-index: 2;
+  text-align: center;
 }
 
 .label_white {
@@ -476,5 +481,106 @@ nav {
   width: 21px;
   height: 20px;
   background-image: url("/src/icons/False.png");
+}
+
+.world {
+  min-height: 717px;
+  background-image: url("/src/img/bg/third_bg.png");
+  padding: 49px 0;
+}
+
+.world_descr {
+  display: block;
+  margin-top: 486px;
+  color: #1fbad6;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 68px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.finish {
+  background-color: black;
+  min-height: 156px;
+  padding: 14px 0 39px 0;
+}
+
+.finish_stick {
+  display: inine;
+  margin: 0 auto;
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin-bottom: 32px;
+}
+
+.finish_title {
+  display: block;
+  text-align: center;
+}
+
+.finish_title_text {
+  padding-right: 46px;
+  padding-bottom: 16px;
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.finish_title_text:last-child {
+  content: "";
+  padding-right: 0;
+}
+
+.finish_subtitle {
+  display: inine;
+  text-align: center;
+}
+
+.finish_subtitle_text {
+  padding-right: 21px;
+  color: #999999;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.finish_subtitle_text:last-child {
+  padding-right: 0;
+}
+
+.finish_lang {
+  padding: 36px;
+  color: #1fbad6;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.finish_ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 32px;
+  width: 153px;
+}
+
+.finish__cyrcle {
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+}
+
+.finish__cyrcle_icon {
+  display: block;
+  width: 9px;
+  height: 18px;
+  background-color: #ff5656;
 }
 /*# sourceMappingURL=style.css.map */
